@@ -4,20 +4,6 @@
 
 ---
 
-## 📋 Table of Contents
-
-1. [Project Overview](#project-overview)
-2. [What Was Built](#what-was-built)
-3. [Architecture](#architecture)
-4. [Resources Created](#resources-created)
-5. [Key Features](#key-features)
-6. [Deployment Results](#deployment-results)
-7. [Portfolio Highlights](#portfolio-highlights)
-8. [Technologies Used](#technologies-used)
-9. [Quick Start](#quick-start)
-
----
-
 ## 📌 Project Overview
 
 This project demonstrates a **complete, production-grade AWS infrastructure** built entirely with **Terraform**. It showcases:
@@ -192,6 +178,9 @@ systemctl enable nginx
 ### Screenshot 1: Terraform Plan Output
 **What it shows:** All 27 resources that will be created
 
+<img width="806" height="109" alt="ec2" src="https://github.com/user-attachments/assets/70348aa9-a89b-41f8-bc66-728a305e6694" />
+
+
 ```
 Terraform will perform the following actions:
 
@@ -208,8 +197,6 @@ Changes to Outputs:
   ...and more
 ```
 
-**Key takeaway:** The plan shows exact changes before applying - a DevOps best practice.
-
 ---
 
 ### Screenshot 2: EC2 Instance Running
@@ -221,10 +208,7 @@ Changes to Outputs:
 - Health Checks: `2/2 checks passed`
 - Region: `ap-south-1a`
 
-**What this proves:** 
-- Infrastructure was successfully deployed
-- EC2 instance is running and healthy
-- Terraform code executed correctly
+<img width="806" height="109" alt="ec2" src="https://github.com/user-attachments/assets/4b92bf9c-3f4d-4498-881e-299a24be53b8" />
 
 ---
 
@@ -235,10 +219,8 @@ Changes to Outputs:
 - **Status: ✅ Available**
 - Creation Date: `April 14, 2026, 19:51:09`
 
-**What this proves:**
-- S3 bucket created successfully
-- All bucket configurations applied
-- Encryption and versioning enabled (not visible in console, but configured)
+<img width="809" height="167" alt="VPC" src="https://github.com/user-attachments/assets/838c8c0e-59ea-4ad2-a4dc-bb707531b6c3" />
+
 
 ---
 
@@ -249,10 +231,8 @@ Changes to Outputs:
 - **Status: ✅ Available**
 - IPv4 CIDR: `10.0.0.0/16`
 
-**What this proves:**
-- VPC created with correct CIDR block
-- Network isolation established
-- Ready for subnets and instances
+<img width="809" height="167" alt="VPC" src="https://github.com/user-attachments/assets/359d36b4-5c65-4d1a-b436-d8bf6f351b25" />
+
 
 ---
 
@@ -283,19 +263,11 @@ s3_bucket_arn = "arn:aws:s3:::terraform-aws-project-dev-bucket"
 s3_bucket_region = "ap-south-1"
 ```
 
-**What this shows:**
-- All resource IDs and IP addresses
-- Network configuration details
-- Ready-to-use resource references
+<img width="599" height="422" alt="output" src="https://github.com/user-attachments/assets/dd18078f-8d75-436d-a762-ca13bca10b04" />
+
 
 ---
 
-### Screenshot 6: All Resources Summary
-**Terraform apply output:**
-
-```
-Apply complete! Resources: 23 added, 0 changed, 0 destroyed.
-```
 
 ## 💻 Technologies Used
 
@@ -419,34 +391,6 @@ terraform-aws-project/
     ├── QUICKSTART.md           # Quick reference
     └── .gitignore              # Git ignore rules
 ```
-
-
-## 🔐 Security Features
-
-### Implemented Security Best Practices
-
-✅ **Network Security**
-- VPC isolation (public/private subnets)
-- Security groups (firewall rules)
-- Least privilege access
-
-✅ **Data Security**
-- S3 encryption (AES256)
-- EBS volume encryption
-- S3 versioning (disaster recovery)
-- S3 public access blocked
-
-✅ **State Security**
-- Remote state in S3
-- State file versioning
-- DynamoDB locking
-
-✅ **Infrastructure Security**
-- SSH key-based authentication
-- Minimal open ports (SSH, HTTP, HTTPS only)
-- Database SG isolated from internet
-
----
 
 ## 📚 Learning Resources
 
