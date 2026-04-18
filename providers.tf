@@ -7,16 +7,8 @@ terraform {
       version = "~> 5.0"
     }
   }
-
-  cloud {
-    organization = "Ommie"
-
-    workspaces {
-      name = terraform.workspace
-    }
-  }
 }
 
 provider "aws" {
-  region = "ap-south-1"
+  region = var.aws_region
 }

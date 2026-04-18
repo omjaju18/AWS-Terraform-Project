@@ -9,4 +9,5 @@ tags = {
   ManagedBy   = "Terraform"
   CreatedDate = "2026-04-14"
   Owner       = "Ommie"
+  Environment = "Development"
 }
