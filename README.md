@@ -178,7 +178,8 @@ systemctl enable nginx
 ### Screenshot 1: Terraform Plan Output
 **What it shows:** All 27 resources that will be created
 
-<img width="806" height="109" alt="ec2" src="https://github.com/user-attachments/assets/70348aa9-a89b-41f8-bc66-728a305e6694" />
+<img width="460" height="368" alt="Plan" src="https://github.com/user-attachments/assets/552e4d93-895c-400f-836e-d0936c59cbb2" />
+
 
 
 ```
@@ -218,8 +219,9 @@ Changes to Outputs:
 - Region: `Asia Pacific (Mumbai) ap-south-1`
 - **Status: ✅ Available**
 - Creation Date: `April 14, 2026, 19:51:09`
+  
+<img width="541" height="245" alt="s3" src="https://github.com/user-attachments/assets/7e5617e2-6c1d-4ce4-a2be-9e757e15e52a" />
 
-<img width="809" height="167" alt="VPC" src="https://github.com/user-attachments/assets/838c8c0e-59ea-4ad2-a4dc-bb707531b6c3" />
 
 
 ---
@@ -263,7 +265,7 @@ s3_bucket_arn = "arn:aws:s3:::terraform-aws-project-dev-bucket"
 s3_bucket_region = "ap-south-1"
 ```
 
-<img width="599" height="422" alt="output" src="https://github.com/user-attachments/assets/dd18078f-8d75-436d-a762-ca13bca10b04" />
+<img width="599" height="422" alt="output" src="https://github.com/user-attachments/assets/9fcc0be8-39f3-4db5-b333-25a0be2bcdb6" />
 
 
 ---
